@@ -1,9 +1,9 @@
 // redirect.ts
 
-// Define the correct redirect URL
-const redirectUrl = "http://srv233619.hoster-test.ru/red"; // ✅ Fixed the protocol
+// ✅ Properly formatted URL
+const redirectUrl = "http://srv233619.hoster-test.ru/red";
 
-// Handle the request
+// Redirect handler
 Deno.serve(() =>
   new Response(null, {
     status: 302,
