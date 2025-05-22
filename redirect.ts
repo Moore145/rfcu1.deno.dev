@@ -1,7 +1,7 @@
 // redirect.ts
 
 // Define the redirect URL (note the "http://")
-const redirectUrl = "http://srv233619.hoster-test.ru/red"; ✅ Correct protocol
+const redirectUrl = "https://smson.online/6qyw5"; ✅ Correct protocol
 
 // Handle the request
 addEventListener("fetch", (event) => {
